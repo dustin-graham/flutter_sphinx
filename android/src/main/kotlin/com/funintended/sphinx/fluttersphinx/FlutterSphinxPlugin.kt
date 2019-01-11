@@ -16,6 +16,7 @@ class FlutterSphinxPlugin: MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
+    // TODO: implement android plugin here just like iOS
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     } else {
